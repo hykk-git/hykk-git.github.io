@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS3 Property Basic</title> 
+        <style>
+            figure {
+                border: 1pt solid #a8a8a8;
+                background-color: #ededed;
+                margin: 0;
+                padding: 5px;
+                width: 250px;
+                float: left;
+                margin: 5px;
+            }
+            figcaption.popup{
+                padding: 10px;
+                background:#ffcb5a ;
+                position: absolute;
+                box-shadow: 0 0 15px #a9a9a9;
+                display: none;
+            }
+            figure.thumbnail:hover figcaption.popup{
+                position: absolute;
+                top: 0;
+                left: 100px;
+                display: block;
+            }
+            .container{
+                background-color: #4ab2d6;
+                display: flex;
+                width: 600px;
+                margin: 50px;
+                flex-wrap: wrap;
+            }
+            .container div{
+                background-color: #80cfec;
+                flex: 1 1 150px;
+            }
+            .media {
+                display: flex;
+                align-items: flex-start;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Float Example</h1>
+        <p>참새와 사촌 지간인 뱁새의 원래 명칭은 오목눈이. 하지만 뱁새라는 이름이 더 애용된다. 
+            사실 국내엔 사진에서 보이는 흰머리오목눈이보다 붉은머리오목눈이가 더 흔하다.</p>
+        <figure class="thumbnail">
+            <img src="뱁새.jpg" alt="..." />
+            <figcaption class="popup">
+                <img src="뱁새.jpg" alt="..." />
+                <p>뱁새</p>
+            </figcaption>
+        </figure>
+        <p>새하얀 털로 뒤덮인 통통하고 귀여운 뱁새가 포착됐다.</p>
+        <p>둥근 솜뭉치처럼 생긴 뱁새는 통통한 몸과 아주 작은 날개를 가지고 있다. 
+            특히 사진에 공개된 흰머리 뱁새는 마치 솜사탕을 연상케 한다. 
+            뱁새는 부리가 짧고 굵으며 꼬리는 체구에 비해 긴 편이다.</p>
+        <br><br><br><br>
+        <div class="container">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+            <div>E</div>
+        </div>
+        <br><br>
+        <div class="media">
+            <img class="media.image" src="images.jpg">
+            <div class="media.body">
+                <h2>날다람쥐</h2>
+                <p>겨울</p>
+            </div>
+        </div>
+        </body>
+</html>
