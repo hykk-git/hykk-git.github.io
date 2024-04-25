@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>인하대학교</title>
+</style>
+</head>
+<body>
+<form  method="get" action="#">
+    <h1>인하대 컴퓨터공학과 홈페이지 회원가입</h1>
+    <h2>필수 정보</h2>
+    <h3>이메일</h3>
+    <input type="text" placeholder="E-mail">
+    <input type="button" value="형식 체크">
+    <br>
+    <h3>패스워드</h3>>
+    <input type="password" name="passwd1" placeholder=Password>
+    <br>
+    <h3>패스워드 재입력</h3>>
+    <input type="password" name="passwd2" placeholder=Password(Repeat)>
+    <h3>이름</h3>
+    <input type="text" name="username" placeholder="Name">
+    <h3>성별</h3>
+    <input type="radio" name="gender" value="m"> 남자(Man)
+    <input type="radio" name="gender" value="w"> 여자(Woman)
+    <h3>분류</h3>
+    <select>
+        <optgroup>
+            <option value="u">학사과정</option>
+            <option value="u">석사과정</option>
+            <option value="u">박사/통합과정</option>
+            <option value="u">교직원</option>
+            <option value="u">학부모</option>
+            <option value="u">일반인</option>
+        </optgroup>
+    </select>
+    <input type="submit" value="정보 제출" class="btn"> 
+</form>
+</body>
+</html>

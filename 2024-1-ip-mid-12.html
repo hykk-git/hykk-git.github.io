@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Virtual Keyboard</title>
+</head>
+<style>
+    #keyboard {
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+        text-align: center;
+        background-color: grey;
+    }
+
+    #inputField {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+            font-size: 16px;
+    }
+
+    .key {
+        padding: 10px 20px;
+        margin: 5px;
+        background-color: gray;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #enter {
+        width: 80%;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: gray;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const inputField = document.getElementById("inputField");
+    document.querySelectorAll(".key").forEach(button => {
+        button.addEventListener("click", function() {
+            inputField.value += this.textContent;
+        });
+    });
+
+    const spacebar = document.getElementById("enter");
+    spacebar.addEventListener("click", function() {
+        inputField.value += " ";
+    });
+});
+
+</script>
+<body>
+
+<div id="keyboard">
+    <input type="text" id="inputField" readonly>
+    <div class="a1">
+        <button class="key"><-</button>
+        <button class="key">/</button>
+        <button class="key">*</button>
+        <button class="key">-</button>
+    </div>
+    <div class="a2">
+        <button class="key">7</button>
+        <button class="key">8</button>
+        <button class="key">9</button>
+        <button class="key">+</button>
+    </div>
+    <div class="a3">
+        <button class="key">4</button>
+        <button class="key">5</button>
+        <button class="key">6</button>
+    </div>
+    <div class="a4">
+        <button class="key">1</button>
+        <button class="key">2</button>
+        <button class="key">3</button>
+    </div>
+    <div class="a5">
+        <button class="key">0</button>
+        <button class="key">.</button>
+        <button class="enter">enter</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
