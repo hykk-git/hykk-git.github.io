@@ -1,0 +1,19 @@
+{
+  "name": "sample-api",
+  "version": "1.0.0",
+  "description": "A sample api to help learn Node ",
+  "main": "stocks-api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hykk-git/hykk-git.github.io.git"
+  },
+  "author": "hy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hykk-git/hykk-git.github.io/issues"
+  },
+  "homepage": "https://github.com/hykk-git/hykk-git.github.io#readme"
+}
